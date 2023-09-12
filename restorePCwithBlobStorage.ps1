@@ -56,8 +56,8 @@ $activeUsername = (Get-WmiObject Win32_ComputerSystem | Select-Object username).
 $userName = $activeUsername -replace '.*\\'
 $user = $userName.ToLower()
 
-$storageAccountName = "ztds23"
-$storageAccountKey = "oYS7I9QmDzlPDS9siGZEH5SSowrZKRl1OHdX6OZj4B55avphOdfq0nWJ0h0gdntTb5D4Jlbu32HU+AStGFC03g=="
+$storageAccountName = "<STORAGE ACCOUNT NAME>"
+$storageAccountKey = "<STORAGE ACCOUNT KEY>"
 $context = New-AzStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
 
 #Have to backup each location as ZIP
